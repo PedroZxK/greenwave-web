@@ -20,3 +20,56 @@ h1,
 .rightFooter p {
     font-family: 'Jeju Gothic', sans-serif;
 }
+
+#navGreenWave {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.rightNav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.rightNav ul li {
+    list-style: none;
+}
+
+.rightNav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.topPresentation {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.topPresentation h1 {
+    width: 50%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.topPresentation p {
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.presentationButton {
+    width: 10%;
+    background-color: #58b036;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}

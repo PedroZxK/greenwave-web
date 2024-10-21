@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 979px){
+@media (min-width: 320px) and (max-width: 979px) {
 
     .hamburguer {
         display: flex;
@@ -10,6 +10,11 @@
 
     nav a {
         display: none;
+    }
+
+    .logo {
+        height: 13vw;
+        width: 48%;
     }
 
     .sidebar__link.active {
@@ -24,21 +29,33 @@
         font-size: clamp(1em, 1em + 1vw, 1.5em);
     }
 
+    .section-title {
+        font-size: 22px;
+    }
+
     .grid-container {
+        gap: 29px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .grid-item {
+        height: auto;
         width: 90%;
         text-align: center;
+        font-size: 14px;
     }
 
     .two-column {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .text h2 {
+        margin: 0 0 10px 0;
+        font-size: 7.5vw;
     }
 
     .text p {
@@ -57,20 +74,33 @@
         width: 90%;
     }
 
-    #footerGreenWave {
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5vw;
     }
 
     .logofooter {
-        width: 15vw;
+        width: 50%;
     }
 
-    .leftFooter {
+    .rightFooter {
+        width: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 10;
     }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .rightFooter p {
+        text-align: center;
+        width: 100%;
+    }
+}
 
 #btnTopo {
     position: fixed;
@@ -88,15 +118,14 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
-  }
+}
 
-  #btnTopo.show {
+#btnTopo.show {
     opacity: 1;
     visibility: visible;
-  }
+}
 
-  #btnTopo.hide {
+#btnTopo.hide {
     opacity: 0;
     visibility: hidden;
-  }
 }

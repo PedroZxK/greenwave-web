@@ -9,17 +9,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: white;
-    background-color: rgba(88, 176, 54, 0.08); /* Cor com 8% de transparência */
-}
-
-.contentinicio {
-    height: auto;
-    background: rgb(88, 176, 54);
-    background: linear-gradient(0deg, rgba(88, 176, 54, 0) 0%, rgba(88, 176, 54, 1) 100%);
 }
 
 header {
+    background-color: #ffffff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -27,12 +20,7 @@ header {
 }
 
 .logo {
-    height: 4vw;
-    width: 16vw;
-}
-
-nav {
-    margin: 0 38px 0 0;
+    width: 8vw;
 }
 
 nav a {
@@ -40,13 +28,6 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 20px;
-    transition: .2s;
-}
-
-nav a:hover {
-    color: white;
-    transition: .2;
 }
 
 .hamburguer {
@@ -65,7 +46,7 @@ nav a:hover {
 .hamburguer span {
     width: 1.8rem;
     height: 0.2rem;
-    background: black;
+    background: #58B036;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -84,7 +65,7 @@ nav a:hover {
     z-index: 1;
 }
 
-.sidebarlink {
+.sidebar__link {
     display: block;
     padding: 20px;
     color: #58B036;
@@ -101,9 +82,19 @@ nav a:hover {
     cursor: pointer;
 }
 
+.close {
+    width: 10px;
+}
+
 .hero {
     position: relative;
     height: 500px;
+<<<<<<< HEAD
+    background-image: url('../img/img3.png');
+    /* Substitua com a URL da imagem real */
+=======
+    background-image: url('../img/img3.png'); /* Substitua com a URL da imagem real */
+>>>>>>> 2029a853d4925fdac99a975152e2e179b7f3e180
     background-repeat: none;
     background-size: cover;
     background-position: center;
@@ -111,7 +102,6 @@ nav a:hover {
 
 .hero-text {
     position: absolute;
-    width: 54vw;
     top: 50%;
     left: 35%;
     transform: translate(-50%, -50%);
@@ -126,7 +116,10 @@ nav a:hover {
 .hero p {
     font-size: 20px;
     color: black;
+<<<<<<< HEAD
+=======
     margin: 0 0 19px 0;
+>>>>>>> 2029a853d4925fdac99a975152e2e179b7f3e180
 }
 
 .cta-button {
@@ -139,67 +132,51 @@ nav a:hover {
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
-    transition: .2s;
-}
-
-.cta-button:hover {
-    background-color: white;
-    border: solid 1px #58B036;
-    color: black;
-    transition: .2s;
 }
 
 section {
     padding: 65px;
+    background-color: #f4f4f4;
 }
 
 .section-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
-    color: #ffffff;
+    color: #333;
 }
 
 .grid-container {
     display: flex;
-    gap: 103px;
-    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
     justify-content: space-evenly;
-}
-
-
-#vantedesvan {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 35px;
-    height: auto;
-    border-radius: 20px;
-    max-width: 78%;
-    margin: 0 auto;
-    background-color: rgba(88, 176, 54, 0.81);
 }
 
 .grid-item {
     background-color: white;
-    padding: 53px;
-    font-size: 15px;
-    width: 18vw;
+    padding: 44px;
+    width: 20vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    border-radius: 10px;
 }
 
-
 #pontopositivo {
-    color: #00C71E;
-    font-family: "Noto Serif", serif;
+<<<<<<< HEAD
+    color: green;
 }
 
 #pontonegativo {
-    color: #AE0000;
-    font-family: "Noto Serif", serif;
+    color: red;
+=======
+ color: #00C71E;
+ font-family: "Noto Serif", serif;
+}
+
+#pontonegativo {
+ color: #AE0000;
+ font-family: "Noto Serif", serif;  
+>>>>>>> 2029a853d4925fdac99a975152e2e179b7f3e180
 }
 
 .linha {
@@ -245,49 +222,69 @@ section {
     display: flex;
     background-color: #58B036;
     justify-content: space-between;
-    padding: 30px;
 }
 
-.leftFooter {
+.rightFooter {
+    padding: 31px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rightFooter p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-}
-
-.leftFooter p {
-    color: white;
-}
-
-#footerGreenWave p {
-    width: 22vw;
 }
 
 .logofooter {
-    width: 7vw;
+<<<<<<< HEAD
+    margin: 10px;
+    width: 21vw;
+=======
+    height: 7vw;
+    margin: 10px;
+    width: 17vw;
+>>>>>>> 2029a853d4925fdac99a975152e2e179b7f3e180
 }
 
-.documentos {
+.rightFooter {
+    padding: 31px;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
 }
 
-.documentos a {
+.rightFooter img {
+    height: 47px;
+    width: 50px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: solid 1px black;
+    outline: none;
+    background-color: #58B036;
     color: white;
-    font-size: 16px;
-    transition: .2s;
-}
-
-.documentos a:hover {
-    transform: scale(1.05);
-    transition: .2;
-}
-
-.nomes {
-    color: white;
-}
-
-.nome {
-    color: white;
-}
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
+  }
+  
+  #btnTopo.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #btnTopo.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  

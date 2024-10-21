@@ -36,7 +36,7 @@ nav {
     margin: 0 38px 0 0;
 }
 
-nav a {
+.navlink {
     margin: 0 15px;
     text-decoration: none;
     color: black;
@@ -45,7 +45,7 @@ nav a {
     transition: .2s;
 }
 
-nav a:hover {
+.navlink:hover {
     color: white;
     transition: .2;
 }

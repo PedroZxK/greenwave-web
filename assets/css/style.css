@@ -244,7 +244,7 @@ section {
 
 #footerGreenWave {
     display: flex;
-    background-color: #58B036;
+    background-color: rgba(88, 176, 54, 0.81);
     justify-content: space-between;
     padding: 30px;
 }

@@ -4,19 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: white;
-    background-color: rgba(88, 176, 54, 0.08); /* Cor com 8% de transparência */
+    background-color: rgba(88, 176, 54, 0.08);
+    /* Cor com 8% de transparência */
 }
 
-.contentinicio {    
+.contentinicio {
     height: auto;
-    background: rgb(88,176,54);
-    background: linear-gradient(0deg, rgba(88,176,54,0) 0%, rgba(88,176,54,1) 100%);
+    background: rgb(88, 176, 54);
+    background: linear-gradient(0deg, rgba(88, 176, 54, 0) 0%, rgba(88, 176, 54, 1) 100%);
 }
 
 header {
@@ -41,6 +43,12 @@ nav a {
     color: black;
     font-weight: bold;
     font-size: 20px;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: white;
+    transition: .2;
 }
 
 .hamburguer {
@@ -59,7 +67,7 @@ nav a {
 .hamburguer span {
     width: 1.8rem;
     height: 0.2rem;
-    background: #58B036;
+    background: black;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -78,7 +86,7 @@ nav a {
     z-index: 1;
 }
 
-.sidebar__link {
+.sidebarlink {
     display: block;
     padding: 20px;
     color: #58B036;
@@ -122,6 +130,7 @@ nav a {
     color: black;
     margin: 0 0 19px 0;
 }
+
 .cta-button {
     margin-top: 20px;
     background-color: #4CAF50;
@@ -132,16 +141,27 @@ nav a {
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
+    transition: .2s;
 }
+
+.cta-button:hover {
+    background-color: white;
+    border: solid 1px #58B036;
+    color: black;
+    transition: .2s;
+}
+
 section {
     padding: 65px;
 }
+
 .section-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
     color: #333;
 }
+
 .grid-container {
     display: flex;
     gap: 20px;
@@ -158,13 +178,13 @@ section {
 }
 
 #pontopositivo {
- color: #00C71E;
- font-family: "Noto Serif", serif;
+    color: #00C71E;
+    font-family: "Noto Serif", serif;
 }
 
 #pontonegativo {
- color: #AE0000;
- font-family: "Noto Serif", serif;  
+    color: #AE0000;
+    font-family: "Noto Serif", serif;
 }
 
 .linha {
@@ -207,35 +227,52 @@ section {
 }
 
 #footerGreenWave {
-display: flex;
-background-color: #58B036;
-justify-content: space-between;
+    display: flex;
+    background-color: #58B036;
+    justify-content: space-between;
+    padding: 30px;
 }
 
-.rightFooter {
-padding: 31px;
-display: flex;
-flex-direction: row-reverse;
+.leftFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.leftFooter p {
+    color: white;
 }
 
 #footerGreenWave p {
-width: 22vw;
+    width: 22vw;
 }
 
 .logofooter {
-    height: 7vw;
-    margin: 10px;
-    width: 17vw;
+    width: 7vw;
 }
 
-.rightFooter {
-padding: 31px;
-display: flex;
+.documentos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.rightFooter img {
-height: 47px;
-width: 50px;
-cursor: pointer;
-margin: 7px;
+.documentos a {
+    color: white;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.documentos a:hover {
+    transform: scale(1.05);
+    transition: .2;
+}
+
+.nomes {
+    color: white;
+}
+
+.nome {
+    color: white;
 }

@@ -57,33 +57,21 @@
         width: 90%;
     }
 
-    footer {
+    #footerGreenWave {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5vw;
     }
 
     .logofooter {
-        width: 50%;
+        width: 15vw;
     }
 
-    .rightFooter {
-        width: 100%;
-        display: flex;
+    .leftFooter {
         flex-direction: column;
-        align-items: center;
-        padding: 10;
     }
 
-    .social-icons {
-        display: flex;
-    }
-
-    .rightFooter p {
-        text-align: center;
-        width: 100%;
-    }
-}
 #btnTopo {
     position: fixed;
     bottom: 20px;
@@ -111,3 +99,4 @@
     opacity: 0;
     visibility: hidden;
   }
+}

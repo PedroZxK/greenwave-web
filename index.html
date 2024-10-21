@@ -14,6 +14,31 @@
         rel="stylesheet">
     <script src="assets\js\hamburguer.js"></script>
     <script src="assets\js\backToTop;.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('#fade_in');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1 // 10% do elemento visível
+    };
+
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Para não observar novamente
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+</script>
 </head>
 
 <body>
@@ -22,9 +47,9 @@
         <header>
             <img src="assets/img/logo2 .png" alt="Logo" class="logo"> <!-- Substitua com a logo real -->
             <nav>
-                <a href="#VantagensEDesvantagens">Vantagens e Desvantagens</a>
-                <a href="#comofunciona">Como funciona</a>
-                <a href="#origem">Origem</a>
+                <a id="fade_in"  href="#VantagensEDesvantagens">Vantagens e Desvantagens</a>
+                <a  id="fade_in" href="#comofunciona">Como funciona</a>
+                <a  id="fade_in" href="#origem">Origem</a>
 
                 <button class="hamburguer">
                     <span></span>
@@ -44,7 +69,7 @@
 
         </header>
 
-        <section class="hero">
+        <section class="hero"  id="fade_in">
             <div class="hero-text">
                 <h1>Maremotriz: Conexões entre Terra e Oceano</h1>
                 <p>A energia maremotriz aproveita o movimento das marés para gerar eletricidade de forma limpa e
@@ -53,7 +78,7 @@
             </div>
         </section>
     </div>
-    <div class="two-column">
+    <div class="two-column" id="fade_in">
         <div class="text" id="resumo">
             <p>A energia das marés, também chamada de energia maremotriz, é produzida a partir do movimento
                 das marés, aproveitando o desnível da água do mar para gerar eletricidade. É uma fonte de
@@ -64,30 +89,30 @@
         <img src="assets\img\img2.png" class="img2">
     </div>
     <div id="vantedesvan">
-        <h2 id="VantagensEDesvantagens" class="section-title">Pontos positivos e negativos</h2>
+        <h2 id="VantagensEDesvantagens" class="section-title">Pontos positivos e negativos</h2 id="fade_in">
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item" id="fade_in">
                 <div id="pontopositivo"><h3>É uma fonte de energia renovável e limpa</h3></div> 
             </div>
-            <div class="grid-item">
+            <div class="grid-item" id="fade_in">
                 <div id="pontopositivo"><h3>A energia maremotriz é previsível</h3></div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" id="fade_in">
                 <div id="pontopositivo"><h3 >O impacto visual das instalações é relativamente baixo</h3></div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" id="fade_in">
                 <div id="pontonegativo"><h3>Os custos de instalação são elevados</h3></div>
             </div>
-            <div class="grid-item">
-                <div id="pontonegativo"><h3>A geração de energia é instável</h3></div>
+            <div class="grid-item" id="fade_in">
+                <div id="pontonegativo"><h3>Possiveis impactos no ecossistema</h3></div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" id="fade_in">
                 <div id="pontonegativo"><h3>A energia maremotriz só pode ser instalada em locais específicos</h3></div>
             </div>
          </div>
         </div>
     </div>
-    <div class="two-column">
+    <div class="two-column" id="fade_in">
         <div class="text">
             <h2 id="comofunciona">Como funciona a energia das marés?</h2>
             <p>A geração de energia maremotriz utiliza barragens e turbinas submersas para aproveitar
@@ -100,7 +125,7 @@
     </div>
 
     <div class="two-column">
-        <img src="assets\img\img1.png" class="img3" alt="Energia das Marés">
+        <img src="assets\img\img1.png" class="img3" alt="Energia das Marés" id="fade_in">
         <div class="text">
             <h2 id="origem">Origem da energia das marés</h2>
             <p>A energia das marés tem sido usada desde os séculos X e XI para mover moinhos na Europa, mas
@@ -112,7 +137,7 @@
         </div>
     </div>
 
-    <div class="two-column">
+    <div class="two-column" id="fade_in">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-HHYM4x__5s?si=DWtUGvbE-K__b5nG"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted
             -media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"

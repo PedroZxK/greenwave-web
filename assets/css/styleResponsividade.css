@@ -13,9 +13,9 @@
     }
 
     .logo {
-        height: 13vw;
-        width: 48%;
-    }
+        height: auto;
+        width: 58%;
+    }   
 
     .sidebar__link.active {
         display: flex;
